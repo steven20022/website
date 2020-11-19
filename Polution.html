@@ -10,13 +10,29 @@
             box-sizing: border-box;
         }
         
+        .center {
+            display: block;
+            margin-left: 200px;
+            margin-right: auto;
+            padding-left: 200px;
+            width: 50%;
+        }
+        
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
         }
         
+        .sidenavtitle {
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            background-color: #ddd;
+            overflow-x: hidden;
+        }
+        
         .title {
-            height: 10%;
             width: 200px;
             position: fixed;
             z-index: 1;
@@ -61,9 +77,9 @@
     </style>
 </head>
 
-<head class="title" style="text-align: center;">
-    <h1>Polution</h1>
-</head>
+
+<h1 class="sidenavtitle">Polution</h1>
+
 
 <body style="background-color: #ddd;">
     <section>
@@ -85,13 +101,14 @@
         </nav>
 
         <article>
-            <div class="content">
-                <h1 style="text-align: center;">The Affectes of Pollution During The Industrial Revolution </h1>
-                <small style="float: right;">Image Donated by Corbis - Bettmann to ExplorePAHistory </small>
-                <img src="pollution title picture.jpg" alt="Pollution" style="width:auto; float: right;">
+            <div class="center">
+                <h1>The Affectes of Pollution During The Industrial Revolution </h1>
+                <small>    Image Donated by Corbis - Bettmann to ExplorePAHistory </small>
+                <img src="pollution title picture.jpg" alt="Pollution">
                 <p>Hello World</p>
             </div>
         </article>
+
     </section>
 </body>
 
