@@ -1,7 +1,6 @@
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
-var ghpages = require('gh-pages');
 var PORT = process.env.PORT || 3000
 
 var app = express();
