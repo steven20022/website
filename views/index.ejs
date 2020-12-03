@@ -1,12 +1,183 @@
-<%- include ('header.ejs')%>
+<!DOCTYPE html>
+<html>
 
-    <head>
-        <title>Home</title>
-    </head>
+<head>
 
-    <main>
-        <h1>Home</h1>
-        <h1>This is a Test </h1>
-        <p>Hello World</p>
-    </main>
-    <%- include ('footer.ejs')%>
+    <script src="https://kit.fontawesome.com/9d9a3de7f3.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .title {
+            top: auto;
+            justify-content: center;
+            align-self: top;
+            display: block;
+            text-align: center;
+            color: #b6b6b6;
+        }
+        
+        body {
+            min-height: 100vh;
+            background: #23232e;
+            overflow: hidden;
+            align-items: center;
+        }
+        
+        ul {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            display: flex;
+        }
+        
+        ul li {
+            position: relative;
+            list-style: none;
+            margin: 0 20px;
+            cursor: pointer;
+        }
+        
+        umm {
+            display: none;
+        }
+        
+        ul li a {
+            text-decoration: none;
+        }
+        
+        ul li a .fa-custome {
+            font-size: 6em;
+        }
+        
+        ul li::before {
+            font-family: fontAwesome;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 6em;
+            height: 0;
+            overflow: hidden;
+            transition: 500ms ease-in-out;
+            pointer-events: none;
+        }
+        /*Large Screen*/
+        
+        @media only screen and (min-width: 600px) {
+            ul li:nth-child(1)::before {
+                content: '\f780';
+                color: #ff7eee;
+                border-bottom: 4px solid #ff7eee;
+            }
+            ul li:nth-child(2)::before {
+                content: '';
+                color: #ff7eee;
+                border-bottom: 4px solid #ff7eee;
+            }
+            ul li:nth-child(3)::before {
+                content: '\f7d9';
+                color: #ff7eee;
+                border-bottom: 4px solid #ff7eee;
+            }
+            ul li:hover::before {
+                height: 100%;
+            }
+        }
+        /*Small Screen*/
+        
+        @media only screen and (max-width: 600px) {
+            g {
+                display: none;
+            }
+            umm {
+                display: block;
+            }
+            .one::before {
+                content: '\f015';
+                color: #ff7eee;
+                border-bottom: 4px solid #ff7eee;
+            }
+            .two::before {
+                content: '\f780';
+                color: #ff7eee;
+                border-bottom: 4px solid #ff7eee;
+            }
+            .three::before {
+                content: '';
+                color: #ff7eee;
+                border-bottom: 4px solid #ff7eee;
+            }
+            .four::before {
+                content: '\f7d9';
+                color: #ff7eee;
+                border-bottom: 4px solid #ff7eee;
+            }
+            li:hover::before {
+                height: 100%;
+            }
+        }
+    </style>
+
+    <title> Welcome </title>
+</head>
+
+
+<h1 class="title">Welcome To Jacob and Antonio's BIP Project</h1><br>
+
+
+
+<body>
+
+    <g>
+        <ul>
+
+            <li>
+                <a href="polution">
+                    <i class="fas fa-biohazard fa-primary fa-secondary fa-custome"></i>
+
+                </a>
+            </li>
+            <li>
+                <a href="life">
+                    <i class="fas fa-heart fa-primary fa-secondary fa-custome"></i>
+
+                </a>
+            </li>
+            <li>
+                <a href="production">
+                    <i class="fas fa-tools fa-primary fa-secondary fa-custome"></i>
+
+                </a>
+            </li>
+        </ul>
+    </g>
+    <umm>
+        <ul>
+            <li class="two">
+                <a href="polution">
+                    <i class="fas fa-biohazard fa-primary fa-secondary fa-custome"></i>
+
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="three">
+                <a href="life">
+                    <i class="fas fa-heart fa-primary fa-secondary fa-custome"></i>
+
+                </a>
+            </li>
+            <li class="four">
+                <a href="production">
+                    <i class="fas fa-tools fa-primary fa-secondary fa-custome"></i>
+
+                </a>
+            </li>
+        </ul>
+    </umm>
+</body>
+
+</html>
