@@ -4,22 +4,26 @@
     "description": "BIP_Website",
     "main": "app.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/steven20022/website.git"
     },
-    "author": "",
+    "author": "Jacob Elam",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/steven20022/website/issues"
     },
-    "homepage": "https://github.com/steven20022/website#readme",
+    "homepage": "https://steven20022.github.io/website",
     "dependencies": {
         "body-parser": "^1.19.0",
         "ejs": "^3.1.5",
         "express": "^4.17.1",
         "nodemon": "^2.0.6"
+    },
+    "devDependencies": {
+        "gh-pages": "^3.1.0"
     }
 }
