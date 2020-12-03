@@ -1,0 +1,46 @@
+var express = require('express');
+var path = require('path');
+var bodyParser = require('body-parser');
+
+
+var app = express();
+
+//Veiw Engine
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
+//Body Parser Middleware
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+//Set Static Path
+app.use(express.static(path.join(__dirname, 'views')));
+
+app.get('/', function(req, res) {
+    res.render('index');
+});
+
+app.get('/home', function(req, res) {
+    res.render('index');
+});
+
+app.get('/production', function(req, res) {
+    res.render('Production');
+});
+
+app.get('/polution', function(req, res) {
+    res.render('Polution');
+});
+
+app.get('/life', function(req, res) {
+    res.render('Life');
+});
+
+app.get('/welcome', function(req, res) {
+    res.render('Welcome');
+});
+
+
+app.listen(3000, function() {
+    console.log('Server Started on port 3000...');
+})
