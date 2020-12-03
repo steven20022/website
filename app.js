@@ -2,6 +2,7 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var ghpages = require('gh-pages');
+var PORT = process.env.PORT || 3000
 
 
 var app = express();
@@ -42,6 +43,4 @@ app.get('/welcome', function(req, res) {
 });
 
 
-app.listen(3000, function() {
-    console.log('Server Started on port 3000...');
-})
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
