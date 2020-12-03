@@ -4,8 +4,10 @@ var bodyParser = require('body-parser');
 var ghpages = require('gh-pages');
 var PORT = process.env.PORT || 3000
 
-
 var app = express();
+
+var http = require('http');
+var server = http.Server(app)
 
 //Veiw Engine
 app.set('view engine', 'ejs');
