@@ -31,8 +31,8 @@ app.get('/production', function(req, res) {
     res.render('Production');
 });
 
-app.get('/polution', function(req, res) {
-    res.render('Polution');
+app.get('/pollution', function(req, res) {
+    res.render('Pollution');
 });
 
 app.get('/life', function(req, res) {

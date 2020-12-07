@@ -8,6 +8,21 @@
     --transition-speed: 600ms;
 }
 
+.img-container {
+    position: relative;
+    text-align: center;
+    color: #ff7eee;
+    text-align: center;
+}
+
+.img-text {
+    font-size: 3vw;
+    position: absolute;
+    top: 0;
+    left: 55%;
+    transform: translateX(-50%);
+}
+
 body {
     color: black;
     background-color: white;
