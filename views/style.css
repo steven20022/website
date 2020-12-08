@@ -5,14 +5,12 @@
     --text-secondary: #ececec;
     --bg-primary: #23232e;
     --bg-secondary: #141418;
-    --transition-speed: 600ms;
+    --transition-speed: 100ms;
 }
 
 .img-container {
-    position: relative;
     text-align: center;
     color: #ff7eee;
-    text-align: center;
 }
 
 .img-text {
@@ -80,10 +78,6 @@ main {
 
 .nav-item {
     width: 100%;
-}
-
-.nav-item:last-child {
-    margin-top: auto;
 }
 
 .nav-link {
@@ -163,6 +157,6 @@ main {
     }
     .navbar:hover .link-text {
         display: block;
-        transition: opacity var(--transition-speed);
+        transition: var(--transition-speed);
     }
 }
